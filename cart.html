@@ -56,6 +56,12 @@
                 }
         });
     </script>
+
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+
 </head>
 
 <body>
@@ -80,64 +86,176 @@
                     <li><a href="sell.html">(茶農)上架產品</a></li>
             </ul>
         </nav>
+        
     </header>
     <!-- ./header -->
-    
-    <!-- home -->
-    <div class="section" id="home" data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="disply-table">
-              
-                <div class="table-cell site-blocks-table table-striped" data-aos="fade-up" data-aos-delay="0">
-                    <h4>購物車</h4> <br>
-                    
-                    <div class="row mb-1">
-                    <form class="col-md-12" method="post">
-                    <table class="table-bordered" id="t01">
-                        <tr>
-                          <th>品名</th>
-                          <th>價格</th>
-                          <th>數量</th>                          
-                        </tr>
-                        <tr>
-                          <td>茶聖黑茶</td>
-                          <td>500</td>
-                          <td>
-                            <input type="number" id="1" value="1" min="1" max="20" />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>茶聖茉莉花茶</td>
-                          <td>600</td>
-                          <td>
-                            <input type="number" id="1" value="1" min="1" max="20" />
-                           </td>                        
-                        </tr>
-                        <tr>
-                          <td>茶聖鐵觀音</td>
-                          <td>700</td>
-                          <td>
-                            <input type="number" id="1" value="1" min="1" max="20" />
-                          </td>
-                        </tr>
-                      </table>
-                   </div><br>
 
-                   <h3><strong>帳單資料</strong></h3>
-                   <h5>請輸入您的帳單資料</h5><br>
-                   <textarea class="form-control" rows="1" id="comment" placeholder="姓名"></textarea>
-                   <textarea class="form-control" rows="1" id="comment" placeholder="電話"></textarea>
-                   <textarea class="form-control" rows="2" id="comment" placeholder="配送地址"></textarea>
-                   <textarea class="form-control" rows="1" id="comment" placeholder="電子郵件"></textarea>
-                   <textarea class="form-control" rows="5" id="comment" placeholder="備註"></textarea><br>
-                    <button class="btn btn-default" >繼續</button>
-                </form></div>
-                
-            </div>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+            <strong>購物車</strong>
         </div>
+
+        <!-- Product #1 -->
+        <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="item-1.jpg" alt="" />
+        </div>
+
+        <div class="description">
+            <span>茶聖紅茶</span>
+            <span>Black Tea</span>
+            <span>100g</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">$549</div>
+        </div>
+
+        <!-- Product #2 -->
+        <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="item-2.jpg" alt=""/>
+        </div>
+
+        <div class="description">
+            <span>茶聖茉莉花茶</span>
+            <span>Jasmine Tea</span>
+            <span>100g</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">$870</div>
+        </div>
+
+        <!-- Product #3 -->
+        <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="item-3.jpg" alt="" />
+        </div>
+
+        <div class="description">
+            <span>茶聖鐵觀音</span>
+            <span>Ti kuan yin</span>
+            <span>150g</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">$649</div>
+        </div>
+
+        <div class=""  style="margin-top: 0rem; padding: 1rem">
+                <h2>Contact Info</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">姓名</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="王小明"">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">電話</label>
+                        <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="03-1234567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">配送地址</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="300新竹市東區光復路二段101號"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">備註</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="任何想說的..."">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+
+                    <button type="submit" class=" btn-success ">Ok</button>
+                </form>
+        </div>
+
     </div>
-    <!-- ./home -->
-    
+ 
+
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+        $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value =100;
+            }
+
+            $input.val(value);
+        });
+
+        $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+        });
+    </script>   
     
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

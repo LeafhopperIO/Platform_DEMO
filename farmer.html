@@ -14,6 +14,12 @@
     <link href="css/aos.css" rel="stylesheet">
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,62 +60,216 @@
         <div class="container">
             <div class="disply-table">
                 <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-                    <h4>訂單</h4>
-                    <h5><strong>您可以在此管理並執行已收到的訂單</strong></h5><br>
-                    
-                    <input type="text" class="form-control " style="width:30%" placeholder="輸入關鍵字搜尋訂單" name="Search">
 
-                    <table style="width:100%"  class="table table-hover ">
-                        <tr>
-                            <th>編號</th>
-                            <th>日期</th> 
-                            <th>姓名</th> 
-                            <th>品項</th>
-                            <th>數量</th>
-                            <th>地址</th>
-                            <th>電話</th>
-                            <th>訂單狀態</th>
-                            <th>付款</th>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>2019-10-01 10:01</td>
-                            <td>小周</td>
-                            <td>凍頂烏龍茶</td>
-                            <td>50</td>
-                            <td>新竹市東區光復路二段101號</td>
-                            <td>03-1234567</td>
-                            <td>尚未完成</td>
-                            <td>已付款</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>2019-10-02 10:02</td>
-                            <td>小林</td>
-                            <td>東方美人茶</td>
-                            <td>30</td>
-                            <td>新竹市東區光復路二段101號</td>
-                            <td>03-1234567</td>
-                            <td>尚未完成</td>
-                            <td>尚未付款</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>2019-10-03 10:03</td>
-                            <td>小許</td>
-                            <td>凍頂烏龍茶</td>
-                            <td>70</td>
-                            <td>新竹市東區光復路二段101號</td>
-                            <td>03-1234567</td>
-                            <td>已完成</td>
-                            <td>已付款</td>
-                        </tr>
-                     </table>
-                    </div>
+
+            <!-- Title -->
+            <div class="title">
+                <strong>訂單列表</strong>
+            </div>
+    
+            <!-- Product #0 -->
+            <div class="item">
+
+                <div class="description0">
+                    <span></span>
+                </div>
+                
+                <div class="description2">
+                    <span><strong>日期</strong></span>
+                </div>
+
+                <div class="description1">
+                    <span><strong>姓名</strong></span>
+                </div>
+
+                <div class="description3">
+                    <span><strong>品項</strong></span>
+                </div>
+                
+                <div class="description4">
+                    <span><strong>數量</strong></span>
+                </div>
+
+                <div class="description5">
+                    <span><strong>地址</strong></span>
+                </div>
+
+                <div class="description6">
+                    <span><strong>電話</strong></span>
+                </div>
+
+                <div class="description7">
+                    <span><strong>狀態</strong></span>
+                </div>
+            </div>
+
+            <!-- Product #1 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                </div>
+                
+                <div class="description2">
+                        <span>2019-10-01 10:01</span>
+                </div>
+
+                <div class="description1">
+                    <span>小周</span>
+                </div>
+
+                <div class="description3">
+                        <span>凍頂烏龍茶</span>
+                </div>
+                
+                <div class="description4">
+                        <span>50</span>
+                </div>
+
+                <div class="description5">
+                        <span>新竹市東區光復路二段101號</span>
+                </div>
+
+                <div class="description6">
+                        <span>03-1234567</span>
+                </div>
+
+                <div class="description7">
+                        <span>已付款</span>
+                </div>
+
+            </div>
+
+            <!-- Product #2 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                </div>
+                
+                <div class="description2">
+                    <span>2019-10-02 10:02</span>
+                </div>
+
+                <div class="description1">
+                    <span>小林</span>
+                </div>
+
+                <div class="description3">
+                    <span>東方美人茶</span>
+                </div>
+                
+                <div class="description4">
+                    <span>30</span>
+                </div>
+
+                <div class="description5">
+                    <span>新竹市東區光復路二段101號</span>
+                </div>
+
+                <div class="description6">
+                    <span>03-1234567</span>
+                </div>
+
+                <div class="description7">
+                    <span>尚未付款</span>
+                </div>
+    
+            </div>
+    
+            <!-- Product #3 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                </div>
+                
+                <div class="description2">
+                    <span>2019-10-03 10:03</span>
+                </div>
+
+                <div class="description1">
+                    <span>小許</span>
+                </div>
+
+                <div class="description3">
+                    <span>凍頂烏龍茶</span>
+                </div>
+                
+                <div class="description4">
+                    <span>70</span>
+                </div>
+
+                <div class="description5">
+                    <span>新竹市東區光復路二段101號</span>
+                </div>
+
+                <div class="description6">
+                    <span>03-1234567</span>
+                </div>
+
+                <div class="description7">
+                    <span>已付款</span>
+                </div>
+
+    
+            </div>
+        
+                <br><h5><strong>可輸入任意關鍵字搜尋訂單</strong></h5>
+                <input type="text" class="form-control " style="width:30%" placeholder="輸入關鍵字搜尋訂單" name="Search">
+
+            </div>
             </div>
         </div>
     </div>
     <!-- ./home -->
+
+
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+        $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value =100;
+            }
+
+            $input.val(value);
+        });
+
+        $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+        });
+    </script>   
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
     
     
     <!-- jQuery -->
