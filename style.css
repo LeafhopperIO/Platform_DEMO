@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html,
 body {
   width: 100%;
@@ -54,8 +55,22 @@ body {
   display: flex;
 }
 
+.item1:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.item:nth-child(1) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
 .item:nth-child(3) {
   border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.item:nth-child(4) {
   border-bottom:  1px solid #E1E8EE;
 }
 
@@ -63,6 +78,12 @@ body {
 .buttons {
   position: relative;
   padding-top: 30px;
+  margin-right: 60px;
+}
+
+.buttons1 {
+  position: relative;
+  padding-top: 12px;
   margin-right: 60px;
 }
 
